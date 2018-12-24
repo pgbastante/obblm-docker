@@ -4,8 +4,6 @@ ARG MYSQL_USER
 ARG MYSQL_PASSWORD
 WORKDIR /var/www/html/
 
-ADD docker-entrypoint.sh /var/www/docker-entrypoint.sh
-
 # Use the default production configuration
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 
